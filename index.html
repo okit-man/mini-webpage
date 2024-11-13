@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini webpage</title>
+    <!--FONT ICON-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="sideBar">
+        
+      <div class="sidebar">
+        <ul class="sidebar-header">
+            <li onclick = hideSidebar()><a href="#"></a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg></li>
+            <li><a href="#"></a>what we offer</li>
+            <li><a href="#"></a>who we are</li>
+            <li><a href="#"></a>resources</li>
+            <li><a href="#"></a>health plan</li>
+        
+            
+            <input class="login" type="button" value="App login">
+        
+        </ul>
+      </div>
+       
+        <ul class="nav-item">
+            
+            <!-- logo -->
+            <i class="fa-solid fa-user-doctor"></i>
+
+            <!-- each li represent a navigation links -->
+            <li class="hideOnMobile"><a href="#"></a>what we offer</li>
+            <li class="hideOnMobile"><a href="#"></a>who we are</li>
+            <li class="hideOnMobile"><a href="#"></a>resources</li>
+            <li class="hideOnMobile"><a href="#"></a>health plan</li>
+
+            <label for="app login"></label>
+            <input class="applogin" type="button" value="App login">
+
+            <!-- sidebar icon -->
+            <label class="menu-button" onclick = showSidebar() for="check" class="navbtn">
+            <svg xmlns="http://www.w3.org/2000/svg" height="33px" viewBox="0 -960 960 960" width="33px" fill="#5f6368">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
+            </label>   
+        </ul>
+    </nav>
+
+    <section class="bg-cover">
+        <div>
+            <h2>with primary health care. for <br>primary care</h2>
+            <div class="lout">
+                <ul>
+                    <li class="p1">
+                        <p>private practices</p>
+                    </li>
+                    <li class="p2">
+                        <p>group practices</p>
+                    </li>
+                    <li class="p3">
+                        <p>community health centers</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="input">
+            <label for="email"></label>
+            <input class="mail" type="text" id="email" placeholder="gmail.com" required>
+            
+            <label for="appointment"><strong>Appointment:</strong></label>
+            <input  class="appointment" type="date" placeholder="book an appointment" required>
+
+        </div>
+    </section>
+
+
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector(".sidebar")
+            sidebar.style.display = "flex"
+        }
+        function hideSidebar () {
+            const sidebar = document.querySelector (".sidebar")
+            sidebar.style.display = "none"
+        }
+    </script>
+</body>
+</html>
