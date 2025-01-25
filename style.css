@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 body {
     min-height: 100vh; 
@@ -27,23 +27,16 @@ nav ul {
 }
 
 nav li {
-    /* height: 100px; */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
     text-transform: uppercase;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
-    /* font-size: 0.895em; */
     font-size: 0.9rem;
     color: #3e9fff;
-    /* padding: 0px 6px; */
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 nav a {
-    /* height: 100px; */
     text-decoration: none;
 }
 
@@ -58,21 +51,17 @@ nav li:hover {
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-transform: capitalize;
-    /* text-decoration: none; */
     border: none;
-    /* text-align: center; */
     background-color:#3e9fff;
     color: white;
-    /* height: 40px; */
     margin-left: 21em;
     cursor: pointer;
     border-radius: 3px;
-    /* transition: background-color 0.3s ease; */
 }
 .applogin:hover {
     background-color: black;
     color: white;
-    transition: all 2s ease;
+    transition: all 3s ease;
 }
 
 
@@ -85,6 +74,7 @@ nav li:hover {
 
 
 .sidebar {
+    display: none;
     position: fixed;
     top: 0;
     right: 0;
@@ -94,7 +84,6 @@ nav li:hover {
     backdrop-filter: blur(10px);
     box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
     z-index: 999;
-    display: flex;
     flex-direction: column;
     padding: 0px;
     transition: right 0.3s ease;
@@ -103,17 +92,16 @@ nav li:hover {
     right: 0;
 } */
 .sidebar-header {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    /* padding: 0rem 1rem; */
-    padding: 20px;
+    padding: 30px;
 
 }
 .sidebar li {
     width: 115%;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 
 }
 .login {
@@ -129,7 +117,6 @@ nav li:hover {
     color: white;
     height: 40px;
     margin-right: 4rem;
-    /* padding-right: rem; */
     margin-top:  4rem;
     border-radius: 3px;
     cursor: pointer;
@@ -165,7 +152,7 @@ nav li:hover {
 .text-layout {
     position: relative;
 }
- /* adjust this */
+ /* adjust this to ensure that nav bar is not bringing white space*/
 div h2 {
     color: black;
     font-style: normal;
@@ -175,8 +162,6 @@ div h2 {
     font-size: 2.5em;
     position: absolute;
     transform: translate(75px, 160px);
-    /* margin: 190px 0 0 75px */
-
 }
 .lout ul {
     display: flex;
@@ -254,17 +239,22 @@ div h2 {
     .hideOnMobile {
         display: none;
     }
+    .sidebar li {
+        margin-left: 8em;
+    }
     .applogin {
         margin-left: -5em;
     }
-   
+   .login {
+    margin-left: 4em;
+   }
     nav {
         flex-direction: column;
         height: auto;
         padding: 10px;
     }
    div h2 {
-       font-size: 1.5em;
+       font-size: 1.7em;
        position: absolute;
        transform: translate(75px, 200px);
    }
