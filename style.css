@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }
 body {
     min-height: 100vh; 
@@ -64,7 +64,7 @@ nav li:hover {
     background-color:#3e9fff;
     color: white;
     /* height: 40px; */
-    margin-left: 17em;
+    margin-left: 21em;
     cursor: pointer;
     border-radius: 3px;
     /* transition: background-color 0.3s ease; */
@@ -130,7 +130,7 @@ nav li:hover {
     height: 40px;
     margin-right: 4rem;
     /* padding-right: rem; */
-    margin-top:  4rem ;
+    margin-top:  4rem;
     border-radius: 3px;
     cursor: pointer;
         
@@ -215,13 +215,14 @@ div h2 {
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .hideOnMobile {
         display: none;
     }
    div h2 {
-    font-size: 2.5em;
+    font-size: 2.3em;
     position: absolute;
+    transform: translate(75px, 200px);
    }
     .lout ul {
      display: block;
@@ -240,21 +241,36 @@ div h2 {
     .menu-button {
         display: block;
     }
-    
+
+    .applogin {
+        margin-left: 16em;
+    }
 }
 
 @media (max-width: 500px) {
     .sidebar {
-        width: 0%;
+        width: 50%;
     }
-     /* div h2 {
-        font-size: 2em;
-        margin: 70px 10px 0 10px;
-    } */
-    /* nav {
+    .hideOnMobile {
+        display: none;
+    }
+    .applogin {
+        margin-left: -5em;
+    }
+   
+    nav {
         flex-direction: column;
         height: auto;
         padding: 10px;
-    } */
+    }
+   div h2 {
+       font-size: 1.5em;
+       position: absolute;
+       transform: translate(75px, 200px);
+   }
+   .lout ul {
+       display: block;
+       transform: translate(75px, 260px);
+   }
 }
 
